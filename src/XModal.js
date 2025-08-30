@@ -28,8 +28,33 @@ function XModal(){
 
 
         const {username, email, dob, phone}  = formData;
-        
 
+        
+        if(!email.includes("@")){
+              alert("Invalid email");
+
+            return;
+        }
+
+               //Phone validation
+
+        if(!/^\d{10}$/.test(phone)){
+
+            alert("Invalid phone number");
+
+            return;
+        }
+        
+           //DOB validation
+        const dobDate = new Date(dob);
+            const today = new Date();
+
+            if(dobDate > today) {
+                alert("Invalid date of birth");
+
+                return;
+            }
+   
         //check empty fields
 
         if(!username){
@@ -54,31 +79,6 @@ function XModal(){
 
             return;
         }
-
-        if(!email.includes("@")){
-              alert("Invalid email");
-
-            return;
-        }
-
-        //Phone validation
-
-        if(!/^\d{10}$/.test(phone)){
-
-            alert("Invalid phone number");
-
-            return;
-        }
-
-        //DOB validation
-        const dobDate = new Date(dob);
-            const today = new Date();
-
-            if(dobDate > today) {
-                alert("Invalid date of birth");
-
-                return;
-            }
 
             //reset form and close modal
 
