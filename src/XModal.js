@@ -114,7 +114,7 @@ function XModal(){
 
                             <div className="form-group">
 
-                                <label className="lable">Username: </label>
+                                <label className="label">Username: </label>
 
                                 <input className="input"
 
@@ -127,7 +127,7 @@ function XModal(){
 
                             <div className="form-group">
 
-                                <label className="lable">Email Address: </label>
+                                <label className="label">Email Address: </label>
 
                                 <input className="input"
 
@@ -140,11 +140,11 @@ function XModal(){
 
                                  <div className="form-group">
 
-                                <label className="lable">Phone Number: </label>
+                                <label className="label">Phone Number: </label>
 
                                 <input className="input"
 
-                                type = "number"
+                                type = "text"
                                 id = "phone"
                                 value = {formData.phone}
                                 onChange = {handleChange}
@@ -153,7 +153,7 @@ function XModal(){
 
                                <div className="form-group">
 
-                                <label className="lable">Date of Birth: </label>
+                                <label className="label">Date of Birth: </label>
 
                                 <input className="input"
 
@@ -161,7 +161,7 @@ function XModal(){
                                 id = "dob"
                                 value = {formData.dob}
                                 onChange = {handleChange}
-                                placeholder="dd-mm-yyyy"
+                
                                     />
                                 </div>
 
